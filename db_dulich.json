@@ -1,0 +1,22 @@
+{
+    "diadiem": [
+        {"id": 1, "kind": "trong nước"},
+        {"id": 2, "kind": "ngoài nước"}
+    
+    ],
+
+   "du_lich":[
+    {"id":1, "ten": "hạ long" ,"id_diadiem" : 1 ,"kind": "trong nước" , "image" : "image/halong.jpg" , "sale" : "5900000" , "duration" :"3 ngày 2 đêm" , "transport" : "Xe giường nằm" , "start" :"02/09/2023" , "hot" : 0 },
+    {"id":2, "ten": "Campuchia" ,"id_diadiem" : 2 , "kind": "ngoài nước"  , "image" : "image/Campuchia.jpg" , "sale" : "5900000" , "duration" :"3 ngày 2 đêm" , "transport" : "máy bay" , "start" :"02/09/2023" ,"hot" : 1 },
+   {"id":3, "ten": "nha trang" ,"id_diadiem" : 1 , "kind": "trong nước" , "image" : "image/nhatrang.jpg" , "sale" : "5900000" , "duration" :"3 ngày 2 đêm" , "transport" : "Xe giường nằm" , "start" :"02/09/2023" , "hot" : 0 },
+    {"id":4, "ten": "hàn quốc" ,"id_diadiem" : 2, "kind": "ngoài nước" , "image" : "image/hanquoc.jpg" , "sale" : "5900000" , "duration" :"3 ngày 2 đêm" , "transport" : "máy bay" , "start" :"02/09/2023" , "hot" : 0 },
+    {"id":5, "ten": "đà nẵng " ,"id_diadiem" : 1 , "kind": "trong nước" , "image" : "image/danang.jpg" , "sale" : "5900000" , "duration" :"3 ngày 2 đêm" , "transport" : "Xe giường nằm" , "start" :"02/09/2023" , "hot" : 0 },
+   {"id":6, "ten": "châu âu" ,"id_diadiem" : 2 , "kind": "ngoài nước" , "image" : "image/chauau.jpg" , "sale" : "5900000" , "duration" :"3 ngày 2 đêm" , "transport" : "máy bay" , "start" :"02/09/2023" , "hot" : 0 },
+    {"id":7, "ten": "đà lạt" ,"id_diadiem" : 1 , "kind": "trong nước" , "image" : "image/dalat.jpg" , "sale" : "5900000" , "duration" :"3 ngày 2 đêm" , "transport" : "Xe giường nằm" , "start" :"02/09/2023" , "hot" : 0 },
+    {"id":8, "ten": "phan thiết" ,"id_diadiem" : 1 , "kind": "trong nước" , "image" : "image/phanthiet.jpg" , "sale" : "5900000" , "duration" :"3 ngày 2 đêm" , "transport" : "Xe giường nằm" , "start" :"02/09/2023" , "hot" : 0 },
+   {"id":8, "ten": "thái lan" ,"id_diadiem" : 2 , "kind": "ngoài nước" , "image" : "image/thailan.jpg" , "sale" : "5900000" , "duration" : "3 ngày 2 đêm" , "transport" : "máy bay" , "start" :"02/09/2023" , "hot" : 0 },
+   {"id":10, "ten": "hạ long" ,"id_diadiem" : 1 , "kind": "trong nước" , "image" : "image/halong.jpg" , "sale" : "5900000" , "duration" : "3 ngày 2 đêm" , "transport" : "Xe giường nằm" , "start" :"02/09/2023" , "hot" : 0 },
+   {"id":11, "ten": "singapore" ,"id_diadiem" : 2 , "kind": "ngoài nước" , "image" : "image/singapore.jpg" , "sale" : "5900000" , "duration" :  "3 ngày 2 đêm" , "transport" : "máy bay" , "start" :"02/09/2023" , "hot" : 0 }        
+   ]
+}
+   

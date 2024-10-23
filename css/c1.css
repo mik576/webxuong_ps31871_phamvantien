@@ -1,0 +1,314 @@
+* { 
+    margin: 0; 
+    padding: 0; 
+    box-sizing: border-box; 
+}
+
+a { 
+    text-decoration: none; 
+}
+
+html { 
+    scroll-behavior: smooth; 
+}
+
+/* Header */
+#header {
+    display: flex;
+    justify-content: space-between; 
+    align-items: center;
+    background-color: lightgoldenrodyellow; 
+    padding: 3px 75px; /* Giảm padding để gọn hơn */
+    border-bottom: 2px solid #d9d9d9; 
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1); /* Thêm shadow cho nổi bật */
+}
+
+.logo {
+    font-size: 1.5em; 
+    font-weight: bold; 
+    color: rgb(216, 14, 14); /* Màu chữ cho logo */
+    margin-right: 20px;
+}
+
+/* Phần số điện thoại */
+.sodienthoai {
+    display: flex; 
+    align-items: center;
+    font-size: 1.1em;
+    margin-right: auto; /* Đẩy phần này về phía trái */
+}
+
+.sodienthoai span {
+    margin-right: 15px; /* Khoảng cách giữa icon và số điện thoại */
+}
+
+/* Navbar */
+.navbar {
+    display: flex; 
+    justify-content: center; /* Đẩy nội dung về giữa */
+    flex-grow: 1; /* Cho phép navbar chiếm nhiều diện tích */
+    margin-right: -1px; /* Khoảng cách với logo */
+}
+
+.navbar a {
+    color: rgb(247, 9, 9);
+    margin-left: 20px;
+    font-size: 1.1em;
+    font-weight: 500;
+    padding: 10px 15px; /* Thêm padding cho nút bấm to hơn */
+    border-radius: 5px;
+    transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+.navbar a:hover {
+    color: aqua;
+    background-color: rgba(0, 0, 0, 0.1); /* Thêm nền khi hover */
+    text-decoration: underline;
+}
+
+/* Phần ngôn ngữ */
+.ngonngu {
+    margin-left: 20cm; /* Đẩy phần ngôn ngữ sang phải */
+    display: flex; 
+    align-items: center; 
+}
+
+/* Nút ngôn ngữ */
+.ngonngu a {
+  
+    color: rgb(241, 7, 7); /* Đổi màu chữ thành trắng */
+    padding: 5px 10px;
+    border-radius: 3px;
+    transition: background-color 0.3s ease, color 0.3s ease;
+   
+}
+
+.ngonngu a:hover {
+    background-color: rgb(235, 4, 4); /* Đổi màu khi hover */
+}
+
+
+/* Menu */
+#menu { 
+    background-color: orange; 
+    height: 60px; 
+    line-height: 60px; 
+    text-align: center;
+    position: sticky; 
+    top: 0; 
+    left: 0;
+    z-index: 1000; /* Luôn luôn hiện lên trên cùng */
+}
+
+#menu li { 
+    list-style: none; 
+    display: inline-block; 
+    margin: 0 20px; 
+}
+
+#menu a { 
+    font-size: 1.2em; 
+    color: rgb(216, 14, 14);
+    transition: color 0.3s ease;
+}
+
+#menu a:hover { 
+    color: aqua; 
+    text-decoration: underline;
+}
+
+
+
+
+#menu { 
+    background-color: orange; height:60px; line-height: 60px;text-align: center;
+    position: sticky; top:0; left:0
+}
+#menu li { list-style: none; display: inline-block; margin:auto 10px}
+#menu a { font-size: 1.2em; color:rgb(216, 14, 14)}
+#menu a:hover { color:aqua; text-decoration: underline;} 
+ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+  }
+
+  ul li {
+    position: relative;
+    display: inline-block;
+    margin-right: 20px;
+  }
+
+  .submenu {
+    display: none;
+    position: absolute;
+    top: 100%; /* Đặt submenu dưới mục cha */
+    left: 50%; /* Đặt submenu bắt đầu từ giữa */
+    transform: translateX(-50%); /* Căn giữa submenu theo trục X */
+    background-color: #f1f1f1;
+    min-width: 160px;
+    z-index: 1000; /* Đảm bảo submenu nằm trên các phần tử khác */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Tạo bóng cho menu */
+  }
+
+  ul li:hover .submenu {
+    display: block;
+  }
+
+  .submenu li {
+    display: block;
+  }
+
+  .submenu li a {
+    padding: 10px;
+    display: block;
+    text-align: left; /* Căn văn bản bên trái cho dễ đọc */
+    color: #333;
+    text-decoration: none;
+  }
+
+  .submenu li a:hover {
+    background-color: #ddd; /* Thêm hiệu ứng hover */
+  }
+
+  .menu3 {
+    background-color: #f9f9f9; /* Màu nền nhạt */
+    padding: 20px; /* Khoảng cách bên trong */
+    border: 1px solid #ddd; /* Đường viền nhẹ */
+    border-radius: 5px; /* Bo góc nhẹ */
+    margin: 20px 0; /* Khoảng cách với các phần tử khác */
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Bóng đổ nhẹ */
+    display: flex; /* Sử dụng Flexbox */
+    justify-content: center; /* Căn giữa nội dung */
+    flex-wrap: wrap; /* Cho phép các mục xuống dòng nếu cần */
+}
+
+.menu3 h2 {
+    color: #333; /* Màu chữ cho tiêu đề */
+    font-size: 24px; /* Kích thước chữ cho tiêu đề */
+    margin-bottom: 15px; /* Khoảng cách dưới tiêu đề */
+    width: 100%; /* Đảm bảo tiêu đề nằm trên cùng */
+    text-align: center; /* Căn giữa tiêu đề */
+}
+
+.menu3 ul {
+    list-style-type: none; /* Bỏ dấu chấm */
+    padding: 0; /* Bỏ padding cho danh sách */
+    margin: 0; /* Bỏ margin cho danh sách */
+    display: flex; /* Sử dụng Flexbox cho danh sách */
+    justify-content: center; /* Căn giữa nội dung trong danh sách */
+}
+
+.menu3 li {
+    padding: 10px; /* Khoảng cách cho mỗi mục */
+    border-bottom: 1px solid #ddd; /* Đường viền dưới cho các mục */
+    transition: background-color 0.3s ease; /* Hiệu ứng chuyển màu nền */
+    margin: 0 15px; /* Khoảng cách giữa các mục */
+}
+
+.menu3 li:hover {
+    background-color: rgba(0, 0, 0, 0.05); /* Màu nền khi hover */
+}
+
+h2 {
+    display: block; /* Đảm bảo h2 được hiển thị */
+    color: #333;
+    font-size: 24px;
+    margin-bottom: 20px;
+}
+#listdulich { background-color: lightcyan; padding:40px 0}
+#listdulich h2 { text-align: center; text-transform: uppercase; }
+#listdulich #data { 
+    display: flex; 
+    justify-content: space-around; 
+    flex-wrap: wrap; 
+}
+#listdulich #data > div { 
+    width: 30%; border: 1px solid black ; 
+    margin: 15px 0.5%; 
+    text-align: center; 
+    font-size: 1.1em; 
+    border-radius: 5px; 
+    box-shadow: 2px 2px 2px black; 
+}
+#listdulich #data > div > img { width: 87% ; height: 200px}
+#listdulich #data > div > p {  margin: 15px; }
+
+#trongnuoc-list, #ngoainuoc-list { 
+    background-color: rgb(196, 231, 231); 
+    padding: 40px 0; 
+}
+
+#trongnuoc-list h2, #ngoainuoc-list h2 { 
+    text-align: center; 
+    text-transform: uppercase; 
+}
+
+#trongnuoc-list #data, #ngoainuoc-list #data { 
+    display: flex; 
+    justify-content: space-around; 
+    flex-wrap: wrap; 
+}
+
+#trongnuoc-list #data > div, #ngoainuoc-list #data > div { 
+    width: 30%; 
+    border: 1px solid black; 
+    margin: 15px 0.5%; 
+    text-align: center; 
+    font-size: 1.1em; 
+    border-radius: 5px; 
+    box-shadow: 2px 2px 2px black; 
+}
+
+#trongnuoc-list #data > div > img, #ngoainuoc-list #data > div > img { 
+    width: 87%; 
+    height: 200px; 
+}
+
+#trongnuoc-list #data > div > p, #ngoainuoc-list #data > div > p { 
+    margin: 15px; 
+}
+
+
+
+footer { 
+    background-color: #333; /* Màu nền tối cho footer */
+    color: white; /* Màu chữ trắng */
+    padding: 20px 0; /* Khoảng cách trên và dưới cho footer */
+    text-align: center; /* Căn giữa nội dung trong footer */
+}
+
+footer .container { 
+    max-width: 1200px; /* Giới hạn chiều rộng cho footer */
+    margin: 0 auto; /* Căn giữa */
+    display: flex; /* Sử dụng flexbox để căn chỉnh các mục */
+    flex-wrap: wrap; /* Cho phép các mục xuống dòng */
+    justify-content: space-around; /* Căn giữa các mục trong container */
+}
+
+footer .column { 
+    flex: 1; /* Chiếm diện tích đều trong footer */
+    min-width: 200px; /* Chiều rộng tối thiểu cho mỗi cột */
+    padding: 10px; /* Khoảng cách giữa các mục */
+}
+
+footer h4 {
+    margin-bottom: 10px; /* Khoảng cách dưới tiêu đề cột */
+}
+
+footer a { 
+    color: white; /* Màu chữ cho liên kết */
+    margin: 5px 0; /* Khoảng cách giữa các liên kết */
+    text-decoration: none; /* Bỏ gạch chân cho liên kết */
+    display: block; /* Để mỗi liên kết chiếm một dòng */
+}
+
+footer a:hover { 
+    text-decoration: underline; /* Gạch chân khi hover */
+    color: #ffcc00; /* Thay đổi màu chữ khi hover */
+}
+
+footer .copyright { 
+    margin-top: 20px; /* Khoảng cách trên cho bản quyền */
+    font-size: 0.8em; /* Kích thước chữ nhỏ hơn cho bản quyền */
+}

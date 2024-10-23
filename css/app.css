@@ -1,0 +1,18 @@
+* { padding:0 ; margin: 0 }
+a { text-decoration: none}
+#menu > ul { list-style: none; display: flex; background-color: darkcyan;} 
+#menu > ul > li { min-width: 90px ; max-width:150px; padding: 10px 0; text-align: center;}
+#menu > ul > li > a {text-decoration: none; color: white ;font-size: 1.2em; font-weight: 600;}
+#menu > ul > li > a:hover { color:yellow}
+.list_sp  h2 { background-color: orange; padding: 6px ; color: white}
+.list_sp #data { display:flex; flex-wrap: wrap;}
+.list_sp #data div.sp { width: 25%; }
+.list_sp #data div.sp > div { 
+    border:1px solid darkcyan;  
+    text-align: center; 
+    padding: 10px; font-size: 1.2em;
+    margin: 10px; border-radius: 5px;
+}
+.list_sp #data div.sp > div > h3 { height: 45px; }
+.list_sp #data div.sp > div > img { height: 150px; width: 100%;}
+.list_sp #data div.sp > div > p { margin-top: 10px;}
