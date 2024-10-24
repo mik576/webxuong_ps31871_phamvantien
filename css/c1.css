@@ -1,90 +1,72 @@
-* { 
-    margin: 0; 
-    padding: 0; 
-    box-sizing: border-box; 
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
 }
 
-a { 
-    text-decoration: none; 
+a {
+    text-decoration: none;
 }
 
-html { 
-    scroll-behavior: smooth; 
+html {
+    scroll-behavior: smooth;
 }
 
 /* Header */
 #header {
     display: flex;
-    justify-content: space-between; 
+    justify-content: space-between;
     align-items: center;
-    background-color: lightgoldenrodyellow; 
-    padding: 3px 75px; /* Giảm padding để gọn hơn */
-    border-bottom: 2px solid #d9d9d9; 
-    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1); /* Thêm shadow cho nổi bật */
+    background-color: lightgoldenrodyellow;
+    padding: 10px 75px;
+    border-bottom: 2px solid #d9d9d9;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
 }
 
+/* Logo */
 .logo {
-    font-size: 1.5em; 
-    font-weight: bold; 
-    color: rgb(216, 14, 14); /* Màu chữ cho logo */
+    font-size: 1.5em;
+    font-weight: bold;
+    color: rgb(216, 14, 14);
     margin-right: 20px;
+}
+
+/* Container chứa số điện thoại và ngôn ngữ */
+.header-right {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
 }
 
 /* Phần số điện thoại */
 .sodienthoai {
-    display: flex; 
+    display: flex;
     align-items: center;
     font-size: 1.1em;
-    margin-right: auto; /* Đẩy phần này về phía trái */
 }
 
 .sodienthoai span {
-    margin-right: 15px; /* Khoảng cách giữa icon và số điện thoại */
-}
-
-/* Navbar */
-.navbar {
-    display: flex; 
-    justify-content: center; /* Đẩy nội dung về giữa */
-    flex-grow: 1; /* Cho phép navbar chiếm nhiều diện tích */
-    margin-right: -1px; /* Khoảng cách với logo */
-}
-
-.navbar a {
-    color: rgb(247, 9, 9);
-    margin-left: 20px;
-    font-size: 1.1em;
-    font-weight: 500;
-    padding: 10px 15px; /* Thêm padding cho nút bấm to hơn */
-    border-radius: 5px;
-    transition: background-color 0.3s ease, color 0.3s ease;
-}
-
-.navbar a:hover {
-    color: aqua;
-    background-color: rgba(0, 0, 0, 0.1); /* Thêm nền khi hover */
-    text-decoration: underline;
+    margin-right: 15px;
 }
 
 /* Phần ngôn ngữ */
 .ngonngu {
-    margin-left: 20cm; /* Đẩy phần ngôn ngữ sang phải */
-    display: flex; 
-    align-items: center; 
+    display: flex;
+    align-items: center;
 }
 
-/* Nút ngôn ngữ */
+.ngonngu {
+    display: flex;
+    align-items: center;
+    margin-left: 40cap; /* Đẩy phần ngôn ngữ về phía bên phải */
+}
+
 .ngonngu a {
-  
-    color: rgb(241, 7, 7); /* Đổi màu chữ thành trắng */
-    padding: 5px 10px;
-    border-radius: 3px;
+    color: rgb(241, 7, 7);
+    padding: 0px 10px;
+    border-radius: 10px;
     transition: background-color 0.3s ease, color 0.3s ease;
-   
-}
-
-.ngonngu a:hover {
-    background-color: rgb(235, 4, 4); /* Đổi màu khi hover */
 }
 
 
@@ -171,20 +153,60 @@ ul {
     background-color: #ddd; /* Thêm hiệu ứng hover */
   }
 
+.navbar {
+    display: flex; 
+    justify-content: center; /* Đẩy nội dung về giữa */
+    flex-grow: 1; /* Cho phép navbar chiếm nhiều diện tích */
+    margin-right: -1px; /* Khoảng cách với logo */
+}
+
+
+
+
+#menu3 { 
+    background-color: orange; 
+    height: 60px; 
+    line-height: 60px; 
+    text-align: center;
+    position: sticky; 
+    top: 0; 
+    left: 0;
+    z-index: 1000; /* Luôn luôn hiện lên trên cùng */
+}
+
+#menu3 li { 
+    list-style: none; 
+    display: inline-block; 
+    margin: 0 20px; 
+}
+
+#menu3 a { 
+    font-size: 1.2em; 
+    color: rgb(216, 14, 14);
+    transition: color 0.3s ease;
+}
+
+#menu3 a:hover { 
+    color: aqua; 
+    text-decoration: underline;
+}
+
+
+
   .menu3 {
     background-color: #f9f9f9; /* Màu nền nhạt */
     padding: 20px; /* Khoảng cách bên trong */
-    border: 1px solid #ddd; /* Đường viền nhẹ */
+    border: 1px solid #ee0202; /* Đường viền nhẹ */
     border-radius: 5px; /* Bo góc nhẹ */
     margin: 20px 0; /* Khoảng cách với các phần tử khác */
-    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Bóng đổ nhẹ */
+    box-shadow: 0 2px 4px rgba(247, 0, 0, 0.1); /* Bóng đổ nhẹ */
     display: flex; /* Sử dụng Flexbox */
     justify-content: center; /* Căn giữa nội dung */
     flex-wrap: wrap; /* Cho phép các mục xuống dòng nếu cần */
 }
 
 .menu3 h2 {
-    color: #333; /* Màu chữ cho tiêu đề */
+    color: #f70000; /* Màu chữ cho tiêu đề */
     font-size: 24px; /* Kích thước chữ cho tiêu đề */
     margin-bottom: 15px; /* Khoảng cách dưới tiêu đề */
     width: 100%; /* Đảm bảo tiêu đề nằm trên cùng */
@@ -207,7 +229,7 @@ ul {
 }
 
 .menu3 li:hover {
-    background-color: rgba(0, 0, 0, 0.05); /* Màu nền khi hover */
+    background-color: rgba(238, 15, 15, 0.05); /* Màu nền khi hover */
 }
 
 h2 {
